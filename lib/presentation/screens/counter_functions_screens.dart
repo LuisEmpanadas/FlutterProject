@@ -33,17 +33,17 @@ class _CounterAppState extends State<CounterApp> {
           children: [
             Text(
               '$counter',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 160,
                 fontWeight: FontWeight.w100,
-                color: Colors.purple,
+                color: counter == 12 ? Colors.purple : Colors.black,
               ),
             ),
             Text(
               counter == 1 ? 'Click' : 'Clicks',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 25,
-                color: Colors.purple,
+                color: counter == 12 ? Colors.purple : Colors.black,
               ),
             ),
           ],
